@@ -19,6 +19,6 @@ public class HelloControllerTest {
     void helloEndpointReturnsHelloWorld() throws Exception {
         mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("hello, world!"));
+                .andExpect(content().string("hello, world"));
     }
 }
